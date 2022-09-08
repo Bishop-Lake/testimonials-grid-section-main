@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** reset end **/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.main {
+    display: flex;
+    justify-content:space-between;
+    width: 1110px;
+    margin-top: 165px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.top-stack {
+    display: flex;
+    justify-content: space-between;
+    width: 825px;
+}
+
+.top-stack .card {
+    height: 222px;
+}
+
+.top-stack .big-card .card {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.top-stack .little-card .card {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.bottom-stack {
+    display: flex;
+    justify-content: space-between;
+    width: 825px;
+    margin-top: 30px;
+}
+
+.bottom-stack .card{
+    height: 206px;
+}
+
+.bottom-stack .little-card .card {
+    background-color: white;
+}
+
+.bottom-stack .big-card .card {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.big-card .card {
+    width: 480px;
+}
+
+.little-card .card {
+    width: 195px;
+}
+
+.right-card {
+    width: 255px;
+}
+
+.right-card .card, .bottom-stack .little-card .card {
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+}
+
+
+
+.person {
+    display: flex;
+}
